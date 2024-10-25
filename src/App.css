@@ -1,0 +1,127 @@
+/* src/App.css */
+
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Use a more modern, professional font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light background color for the whole page */
+  color: #333; /* General text color */
+}
+
+/* Header styles */
+header {
+  background-color: #6C63FF; /* Use a more vibrant color */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem; /* Larger, bolder font */
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better elevation */
+}
+
+/* Navbar styles */
+nav {
+  background-color: #4A47A3; /* Another bright color to contrast with the header */
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #6C63FF;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effects on navbar links */
+nav ul li:hover {
+  background-color: #ff6584; /* Change color on hover */
+  transform: scale(1.1); /* Slightly increase the size */
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff; /* White background for the main content */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 12px; /* Rounded corners */
+  margin: 2rem auto;
+  width: 80%; /* Limit main content width */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task list items */
+li {
+  background-color: #ffefd5;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects on tasks */
+li:hover {
+  transform: translateY(-5px); /* Slight upward motion */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+footer {
+  background-color: #6C63FF; /* Match header */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Shadow on top of footer */
+}
+
+/* Button styles for any interactive elements */
+button {
+  padding: 0.7rem 1.5rem;
+  background-color: #4A47A3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background-color: #ff6584;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  main {
+    width: 95%; /* Adjust main width for small screens */
+    margin: 1rem auto;
+  }
+}
